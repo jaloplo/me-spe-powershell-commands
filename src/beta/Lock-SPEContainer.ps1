@@ -1,3 +1,15 @@
+<#
+.SYNOPSIS
+    Locks a container.
+.DESCRIPTION
+    Locks a container for modifications.
+.PARAMETER ContainerId
+    The ContainerId of the container to lock.
+.EXAMPLE
+    PS C:\> Lock-SPEContainer -ContainerId <Your Container Id>
+    Locks the container with the specified ContainerId. The container is locked for modifications.
+#>
+
 param(
     [Parameter(Mandatory=$true)]
     [string] $ContainerId

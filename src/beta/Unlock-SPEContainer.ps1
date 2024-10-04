@@ -1,3 +1,15 @@
+<#
+.SYNOPSIS
+    Unlocks a container.
+.DESCRIPTION
+    Unlocks a container for modifications.
+.PARAMETER ContainerId
+    The ContainerId of the container to unlock.
+.EXAMPLE
+    PS C:\> Unlock-SPEContainer -ContainerId <Your Container Id>
+    Unlocks the container with the specified ContainerId. The container is unlocked for modifications.
+#>
+
 param(
     [Parameter(Mandatory=$true)]
     [string] $ContainerId
