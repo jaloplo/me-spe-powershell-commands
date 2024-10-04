@@ -1,3 +1,17 @@
+<#
+.SYNOPSIS
+    Deletes a property of a container.
+.DESCRIPTION
+    Deletes a property of a container.
+.PARAMETER ContainerId
+    The ContainerId of the container to delete the property.
+.PARAMETER PropertyName
+    The name of the property to delete.
+.EXAMPLE
+    PS C:\> Remove-SPEContainerProperty -ContainerId <Your Container Id> -PropertyName "MyProperty"
+    Deletes the property "MyProperty" of the container with the specified ContainerId.
+#>
+
 param(
     [Parameter(Mandatory=$true)]
     [string] $ContainerId,

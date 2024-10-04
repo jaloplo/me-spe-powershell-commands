@@ -1,3 +1,20 @@
+<#
+.SYNOPSIS
+    Retrieves all properties of a container or a specific property of a container.
+.DESCRIPTION
+    Retrieves all properties of a container or a specific property of a container.
+.PARAMETER ContainerId
+    The ContainerId of the container to retrieve the properties.
+.PARAMETER PropertyName
+    The name of the property to retrieve.
+.EXAMPLE
+    PS C:\> Get-SPEContainerProperty -ContainerId <Your Container Id>
+    Retrieves all properties of the container with the specified ContainerId.
+.EXAMPLE
+    PS C:\> Get-SPEContainerProperty -ContainerId <Your Container Id> -PropertyName "MyProperty"
+    Retrieves the property "MyProperty" of the container with the specified ContainerId.
+#>
+
 param(
     [Parameter(ParameterSetName='One', Mandatory=$true)]
     [Parameter(ParameterSetName='All', Mandatory=$true)]
