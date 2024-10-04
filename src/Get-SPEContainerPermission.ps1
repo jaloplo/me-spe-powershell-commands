@@ -1,3 +1,15 @@
+<#
+.SYNOPSIS
+    Retrieves the permissions of a container.
+.DESCRIPTION
+    Retrieves the permissions of a container. The permissions are returned as a list of permissions.
+.PARAMETER ContainerId
+    The ContainerId of the container to retrieve the permissions.
+.EXAMPLE
+    PS C:\> Get-SPEContainerPermission -ContainerId <Your Container Id>
+    Retrieves the permissions of the container with the specified ContainerId. The permissions are returned as a list of permissions. 
+#>
+
 param(
     [Parameter(Mandatory=$true)]
     [string] $ContainerId
