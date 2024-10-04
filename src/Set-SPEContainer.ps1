@@ -1,3 +1,31 @@
+<#
+.SYNOPSIS
+    Updates or activate a container.
+.DESCRIPTION
+    Updates a container for the specified ContainerId.
+    You can update the display name, description and OCR settings.
+    Activate a container to make it available for use.
+.PARAMETER ContainerId
+    The ContainerId of the container to update.
+.PARAMETER DisplayName
+    The display name of the container.
+.PARAMETER Description
+    The description of the container.
+.PARAMETER OCR
+    Enables OCR on the container.
+.PARAMETER Activate
+    Activates the container.
+.EXAMPLE
+    PS C:\> Set-SPEContainer -ContainerId <Your Container Id> -DisplayName "My container" -Description "This is my container" -OCR
+    Updates the container with the specified ContainerId, display name, description and OCR enabled.
+.EXAMPLE
+    PS C:\> Set-SPEContainer -ContainerId <Your Container Id> -DisplayName "My container" -Description "This is my container"
+    Updates the container with the specified ContainerId, display name and description.
+.EXAMPLE
+    PS C:\> Set-SPEContainer -ContainerId <Your Container Id> -Activate
+    Activates the container with the specified ContainerId.
+#>
+
 param(
     [Parameter(Mandatory=$true)]
     [string] $ContainerId,

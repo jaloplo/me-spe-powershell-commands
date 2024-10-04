@@ -1,3 +1,15 @@
+<#
+.SYNOPSIS
+    Deletes a container.
+.DESCRIPTION
+    Deletes a container for the specified ContainerId.
+.PARAMETER ContainerId
+    The ContainerId of the container to delete.
+.EXAMPLE
+    PS C:\> Remove-SPEContainer -ContainerId <Your Container Id>
+    Deletes the container with the specified ContainerId.
+#>
+
 param(
     [Parameter(Mandatory=$true)]
     [string] $ContainerId
