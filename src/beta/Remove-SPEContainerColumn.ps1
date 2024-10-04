@@ -1,3 +1,17 @@
+<#
+.SYNOPSIS
+    Deletes a column of a container.
+.DESCRIPTION
+    Deletes a column of a container.
+.PARAMETER ContainerId
+    The ContainerId of the container to delete the column from.
+.PARAMETER ColumnId
+    The Id of the column to delete.
+.EXAMPLE
+    PS C:\> Remove-SPEContainerColumn -ContainerId <Your Container Id> -ColumnId <Your Column Id>
+    Deletes the column with the specified ColumnId from the container with the specified ContainerId.
+#>
+
 param(
     [Parameter(Mandatory=$true)]
     [string] $ContainerId,
