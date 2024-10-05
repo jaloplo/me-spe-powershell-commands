@@ -81,4 +81,4 @@ In this example, we connect to the *Microsoft Graph API* using the `Connect-MgGr
 
 ## Contact
 
-If you have any questions or feedback, please contact me at [jaime.lopez.lopez@live.com](jaime.lopez.lopez@live.com) or [LinkedIn](https://www.linkedin.com/in/jaimelopezlopez/). If you find this project useful, please consider giving it a star on GitHub. Thank you for your support!
+If you have any questions or feedback, please contact me at [jaime.lopez.lopez@live.com](mailto:jaime.lopez.lopez@live.com) or [LinkedIn](https://www.linkedin.com/in/jaimelopezlopez/). If you find this project useful, please consider giving it a star on GitHub. Thank you for your support!
