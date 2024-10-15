@@ -15,6 +15,7 @@ The module provides the following commands (Commands using the beta version of t
 
 - SharePoint Embedded containers management:
   - **Add-SPEContainer**: Create a new container. You can specify the ContainerTypeId, display name, description and OCR settings.
+  - **Enable-SPEContainer**: Activate a container to make it available to use.
   - **Get-SPEContainer**: Retrieve a list of containers for the specified ContainerTypeId or retrieve a specific container for the specified ContainerId.
   - ***Lock-SPEContainer (beta)***: Lock a container for modifications.
   - **Remove-SPEContainer**: Delete a container.
@@ -40,9 +41,17 @@ The module provides the following commands (Commands using the beta version of t
 
 - SharePoint Embedded container permissions management:
   - **Add-SPEContainerPermission**: Add a permission to a container. You can specify the role and login.
+  - **Add-SPEContainerManagerPermissions**: Add a manager permission to a container. You can specify the login.
+  - **Add-SPEContainerOwnerPermissions**: Add an owner permission to a container. You can specify the login.
   - **Get-SPEContainerPermission**: Retrieve the permissions of a container.
+  - **Add-SPEContainerReaderPermissions**: Add a reader permission to a container. You can specify the login.
+  - **Add-SPEContainerWriterPermissions**: Add a writer permission to a container. You can specify the login.
   - **Remove-SPEContainerPermission**: Delete a permission from a container.
-  - **Set-SPEContainerPermission**: Update a permission of a container. You can update the role of a permission for the specified role and login.
+  - **Set-SPEContainerManagerPermission**: Set manager role for a permission of a container.
+  - **Set-SPEContainerOwnerPermission**: Set owner role for a permission of a container.
+  - **Set-SPEContainerPermission**: Update the role of a permission of a container. You can update the role of a permission for the specified role and login.
+  - **Set-SPEContainerReaderPermission**: Set reader role for a permission of a container.
+  - **Set-SPEContainerWriterPermission**: Set writer role for a permission of a container.
 
 ## Usage
 
