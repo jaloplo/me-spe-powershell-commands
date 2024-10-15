@@ -8,7 +8,7 @@
 .PARAMETER Role
     The role of the permission to add. The role can be "reader", "writer", "manager" or "owner".
 .PARAMETER Login
-    The login of the user to add the permission to.
+    The login of the user to add the permission to.  The login can be the email address or the user principal name.
 .EXAMPLE
     PS C:\> Add-SPEContainerPermission -ContainerId <Your Container Id> -Role "reader" -Login <Your Login>
     Adds a reader permission to the container with the specified ContainerId and login.
