@@ -59,5 +59,5 @@ Try {
 }
 Catch {
     Write-Host "Error: $($_.Exception.Message)" -ForegroundColor Red
-    Write-Host $_
+    Write-Error -Message $_ -ErrorAction Stop
 }
