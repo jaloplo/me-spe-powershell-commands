@@ -45,7 +45,7 @@ If(-not $isConnected) {
 
 Try {
     $Body = @{
-        displayName = $Name
+        name = $Name
         description = $Description
         text = @{
             appendChangesToExistingText = $AppendChanges.ToBool()
