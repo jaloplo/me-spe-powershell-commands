@@ -18,9 +18,13 @@ The module provides the following commands (Commands using the beta version of t
   - **Enable-SPEContainer**: Activate a container to make it available to use.
   - **Get-SPEContainer**: Retrieve a list of containers for the specified ContainerTypeId or retrieve a specific container for the specified ContainerId.
   - ***Lock-SPEContainer (beta)***: Lock a container for modifications.
-  - **Remove-SPEContainer**: Delete a container.
+  - **Remove-SPEContainer**: Delete a container or all containers for a container type specified.
   - **Set-SPEContainer**: Update the display name, description and OCR settings of a container. Or activate a container to make it available for use.
   - ***Unlock-SPEContainer (beta)***: Unlock a container for modifications.
+
+- SharePoint Embedded deleted containers management:
+  - ***Get-SPEDeletedContainer (beta)***: Retrieve a list of deleted containers for the specified ContainerTypeId or retrieve a specific deleted container for the specified ContainerId.
+  - ***Remove-SPEDeletedContainer (beta)***: Delete a deleted container or all deleted containers for a container type specified.
 
 - SharePoint Embedded container custom properties management:
   - **Get-SPEContainerCustomProperty**: Retrieve all custom properties of a container or a specific custom property of a container.
