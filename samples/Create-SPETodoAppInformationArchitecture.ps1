@@ -44,6 +44,16 @@ $ContainerId = $(ConvertFrom-Json $ContainerData).id
 Write-Host "Container $ContainerName has been successfully created." -ForegroundColor Green
 
 
+# Container activation
+
+# Activate the container to make it available for use.
+Write-Host "Activating the container..." -ForegroundColor Cyan
+
+.\Enable-SPEContainer.ps1 -ContainerId $ContainerId
+
+Write-Host "Container $ContainerName has been activated." -ForegroundColor Green
+
+
 # Columns creation
 
 Write-Host "Creating columns for $ContainerName container..." -ForegroundColor Cyan
