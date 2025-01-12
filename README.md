@@ -57,6 +57,11 @@ The module provides the following commands (Commands using the beta version of t
   - **Set-SPEContainerReaderPermission**: Set reader role for a permission of a container.
   - **Set-SPEContainerWriterPermission**: Set writer role for a permission of a container.
 
+- SharePoint Embedded files recycle bin management:
+  - **Get-SPERecycleBinFiles**: Retrieve a list of files in the recycle bin for the specified ContainerId.
+  - **Remove-SPERecycleBinFiles**: Purge a file or multiple files of the recycle bin for a container specified.
+  - **Restore-SPERecycleBinFiles**: Restore a file or multiple files from the recycle bin for a container specified.
+
 ## Usage
 
 To use the module, you need to connect to the *Microsoft Graph API* using the `Connect-MgGraph` command. You can find more information about the `Connect-MgGraph` command in the *Microsoft Graph PowerShell* module documentation.
