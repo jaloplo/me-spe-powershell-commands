@@ -27,7 +27,7 @@ If(-not $isConnected) {
 
 Try {
     $Body = @{
-        $Ids = $FileIds
+        ids = $FileIds
     }
 
     $Request = Invoke-MgGraphRequest -Method POST -Uri $("https://graph.microsoft.com/v1.0/storage/fileStorage/containers/$ContainerId/recycleBin/items/delete") -Body $Body -ErrorAction Stop
